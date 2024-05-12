@@ -1,0 +1,29 @@
+.list {
+    height: 200px;
+    list-style: none;
+    outline: 1px solid darkorange;
+    position: relative;
+}
+
+.list-item {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.list-item:first-child {
+    background: red;
+}
+
+.list-item:nth-child(2) {
+    background: blue;
+    left: 50px;
+    top: 50px;
+    z-index: 1;
+}
+
+.list-item:nth-child(3) {
+    background: green;
+    left: 100px;
+    top: 100px;
+}

@@ -1,0 +1,61 @@
+.list {
+    height: 200px;
+    list-style: none;
+    outline: 1px solid darkorange;
+    position: relative;
+}
+
+.list-item {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.list-item:first-child {
+    background: red;
+}
+
+.list-item:nth-child(2) {
+    background: blue;
+    left: 50px;
+    top: 50px;
+    z-index: 1;
+}
+
+.list-item:nth-child(3) {
+    background: green;
+    left: 100px;
+    top: 100px;
+}
+
+/* Другий варіант */
+
+.father {
+    width: 100px;
+    height: 300px;
+    outline: 1px solid blue;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    outline: 1px solid red;
+    position: relative;
+}
+
+.box:nth-child(1) {
+    background: red;
+}
+
+.box:nth-child(2) {
+    background: blue;
+    top: -50px;
+    left: 50px;
+    z-index: 1;
+}
+
+.box:nth-child(3) {
+    background: green;
+    left: 100px;
+    top: -100px;
+}
